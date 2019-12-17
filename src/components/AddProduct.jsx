@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 
 class AddProduct extends Component {
-  state = {};
+  constructor(props){
+    super(props);
+  }
+  // state = ;
   render() {
     return (
       <div>
