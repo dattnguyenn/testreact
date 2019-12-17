@@ -14,7 +14,7 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/product">
-            <Product />
+            <Product/>
           </Route>
           <Route path="/edit">
             <Edit />
