@@ -2,10 +2,14 @@ import React, { Component } from "react";
 import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 class ProductForm extends Component {
-  state = {};
+  handleSubmit = event => {
+    event.preventDefault();
+    console.log(event.target.name.value);
+    console.log(event.target.price.value);
+  };
   render() {
     return (
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
         <FormGroup row>
           <Label for="productName" sm={2}>
             * Name

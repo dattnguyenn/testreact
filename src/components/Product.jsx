@@ -26,9 +26,7 @@ class Product extends Component {
             <Route path="/product/add">
               <AddProduct />
             </Route>
-            <Route path="/product/edit/:id">
-              <Edit />
-            </Route>
+            <Route path="/product/edit/:id" component={Edit}></Route>
             <Route path="/product/">
               <ShowProduct datatable={data} />
             </Route>
