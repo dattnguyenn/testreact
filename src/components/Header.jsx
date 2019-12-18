@@ -10,7 +10,12 @@ class Header extends Component {
         <Navbar color="faded" light expand="md">
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={RRNavLink} exact to="/" activeClassName="active">
+              <NavLink
+                tag={RRNavLink}
+                exact
+                to="/home"
+                activeClassName="active"
+              >
                 Home
               </NavLink>
             </NavItem>
@@ -28,10 +33,10 @@ class Header extends Component {
               <NavLink
                 tag={RRNavLink}
                 exact
-                to="/edit"
+                to="/inventory"
                 activeClassName="active"
               >
-                Edit
+                Inventory
               </NavLink>
             </NavItem>
           </Nav>

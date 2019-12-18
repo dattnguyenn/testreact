@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import Form from "./ProductForm";
 
 class Edit extends Component {
   state = {};
   render() {
     return (
       <div>
-        <h2>Edit</h2>
+        <Form />
       </div>
     );
   }

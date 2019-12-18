@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class EditProduct extends Component {
+class Inventory extends Component {
   state = {};
   render() {
     return (
       <div>
-        <h2>EditProduct</h2>
+        <h2>Inventory</h2>
       </div>
     );
   }
 }
 
-export default EditProduct;
+export default Inventory;
