@@ -1,14 +1,14 @@
-import React, { Fragment } from "react";
-import { useParams } from "react-router-dom";
-import ProductForm from "./ProductForm";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import ProductForm from './ProductForm';
 
 const Edit = () => {
-  let { id } = useParams();
+  const { id } = useParams();
   return (
-    <Fragment>
-      <h3>ID #{id}</h3>
+    <>
+      <h3>{`ID #${id}`}</h3>
       <ProductForm />
-    </Fragment>
+    </>
   );
 };
 

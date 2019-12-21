@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ProductForm from "./ProductForm";
+import React, { Component } from 'react';
+import ProductForm from './ProductForm';
 
 class AddProduct extends Component {
   render() {

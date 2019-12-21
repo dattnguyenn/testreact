@@ -1,12 +1,22 @@
-import React, { Component } from "react";
-import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
+import React, { Component } from 'react';
+import {
+  // eslint-disable-next-line indent
+  Col,
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+} from 'reactstrap';
 
 class ProductForm extends Component {
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     console.log(event.target.name.value);
     console.log(event.target.price.value);
+    // const name = event.target.name.value;
   };
+
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>

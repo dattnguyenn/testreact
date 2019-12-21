@@ -1,12 +1,15 @@
-import React, { Component } from "react";
-import Table from "./Table";
+import React, { Component } from 'react';
+import Table from './Table';
 
 class ShowProduct extends Component {
   render() {
+    // eslint-disable-next-line react/prop-types
+    const { datable } = this.props;
+
     return (
       <div>
         <h2>Product</h2>
-        <Table data={this.props.datatable} />
+        <Table data={datable} />
       </div>
     );
   }

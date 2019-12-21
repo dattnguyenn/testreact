@@ -1,10 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Product from "./components/Product";
-import Home from "./components/Home";
-import Inventory from "./components/Inventory";
-import { Container } from "reactstrap";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Container } from 'reactstrap';
+import Header from './components/Header';
+import Product from './components/Product';
+import Home from './components/Home';
+import Inventory from './components/Inventory';
 
 export default function App() {
   return (
