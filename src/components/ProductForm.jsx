@@ -8,13 +8,16 @@ import {
   Label,
   Input,
 } from 'reactstrap';
+import axios from 'axios';
 
 class ProductForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target.name.value);
-    console.log(event.target.price.value);
-    // const name = event.target.name.value;
+    const form = new FormData();
+    form.append('prod_name', event.target.name.value);
+    axios.post('/api/products', form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
   };
 
   render() {
